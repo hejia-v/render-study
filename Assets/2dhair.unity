@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 903795139}
   - component: {fileID: 903795138}
   - component: {fileID: 903795140}
+  - component: {fileID: 903795141}
   m_Layer: 5
   m_Name: pan
   m_TagString: Untagged
@@ -294,6 +295,22 @@ MonoBehaviour:
   objectNumber: 0
   controlObject: {fileID: 0}
   controlObject2: {fileID: 0}
+--- !u!114 &903795141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903795136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73b71ee56b84bc4988a45421091680a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displacementMap: {fileID: 0}
+  material: {fileID: 0}
+  intensity: 0
+  flipIntensity: 0
+  colorIntensity: 0
 --- !u!1 &1203224879
 GameObject:
   m_ObjectHideFlags: 0
