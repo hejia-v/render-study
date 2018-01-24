@@ -56,3 +56,5 @@ native/xpy/xtest
 *.iml
 /Assets/Trash
 /Assets/Trash.meta
+*.blend1
+*.blend1.meta

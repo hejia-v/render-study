@@ -8,7 +8,7 @@ class GRandom
     //public Random Random { get { return random; } }
 
     /// <summary>
-    /// Ê¹ÓÃGuidÉú³ÉÖÖ×Ó
+    /// ä½¿ç”¨Guidç”Ÿæˆç§å­
     /// </summary>
     static int GetRandomSeedbyGuid()
     {
@@ -16,7 +16,7 @@ class GRandom
     }
 
     /// <summary>
-    /// ·µ»ØÒ»¸ö´óÓÚ»òµÈÓÚ 0.0 ÇÒĞ¡ÓÚ 1.0 µÄËæ»ú¸¡µãÊı¡£
+    /// è¿”å›ä¸€ä¸ªå¤§äºæˆ–ç­‰äº 0.0 ä¸”å°äº 1.0 çš„éšæœºæµ®ç‚¹æ•°ã€‚
     /// </summary>
     public static double Random()
     {

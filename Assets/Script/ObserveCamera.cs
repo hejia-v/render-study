@@ -21,6 +21,8 @@ public class ObserveCamera : MonoBehaviour
 
     void Start()
     {
+        currentRotation = transform.eulerAngles;
+        yaw = currentRotation.y;
         UpdateCamera();
     }
 
@@ -33,8 +35,12 @@ public class ObserveCamera : MonoBehaviour
 
     public void UpdateCamera()
     {
-        yaw += Input.GetAxis("Mouse X") * mouseSensitivity;
-        pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+        float mouseX  = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+        //Debug.Log("mouseX: " + mouseX + ", mouseY: " + mouseY);
+
+        yaw += mouseX * mouseSensitivity;
+        pitch -= mouseY * mouseSensitivity;
         pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
 
         currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
