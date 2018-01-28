@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class TouchHandler : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
-    //public ObserveCamera observeCamera;
+    public ObserveCamera observeCamera;
 
     void Start()
     {
@@ -19,10 +19,10 @@ public class TouchHandler : MonoBehaviour, IPointerDownHandler, IDragHandler, IP
 
     void UpdateCamera()
     {
-        //if (observeCamera!=null)
-        //{
-        //    observeCamera.UpdateCamera();
-        //}
+        if (observeCamera != null)
+        {
+            observeCamera.UpdateCamera();
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
