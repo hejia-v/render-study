@@ -43,7 +43,7 @@
 			Blend Zero One
 
 			// uncomment this to hide inner details:
-			//Offset -8, -8
+			// Offset -8, -8
 
 			SetTexture [_OutlineColor] {
 				ConstantColor (0,0,0,0)
